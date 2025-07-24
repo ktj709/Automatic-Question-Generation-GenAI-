@@ -7,7 +7,6 @@ torchvision==0.22.1
 pillow==11.2.1
 pandas==2.3.0
 numpy==2.2.6
-memory_profiler==0.61.0
 
 # PDF processing
 pdfminer.six==20250506
