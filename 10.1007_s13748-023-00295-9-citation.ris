@@ -1,0 +1,17 @@
+TY  - JOUR
+AU  - Mulla, Nikahat
+AU  - Gharpure, Prachi
+PY  - 2023
+DA  - 2023/03/01
+TI  - Automatic question generation: a review of methodologies, datasets, evaluation metrics, and applications
+JO  - Progress in Artificial Intelligence
+SP  - 1
+EP  - 32
+VL  - 12
+IS  - 1
+AB  - Question generation in natural language has a wide variety of applications. It can be a helpful tool for chatbots for generating interesting questions as also for automating the process of question generation from a piece of text. Most modern-day systems, which are conversational, require question generation ability for identifying the user’s needs and serving customers better. Generating questions in natural language is now, a more evolved task, which also includes generating questions for an image or video. In this review, we provide an overview of the research progress in automatic question generation. We also present a comprehensive literature review covering the classification of Question Generation systems by categorizing them into three broad use-cases, namely standalone question generation, visual question generation, and conversational question generation. We next discuss the datasets available for the same for each use-case. We further direct this review towards applications of question generation and discuss the challenges in this field of research.
+SN  - 2192-6360
+UR  - https://doi.org/10.1007/s13748-023-00295-9
+DO  - 10.1007/s13748-023-00295-9
+ID  - Mulla2023
+ER  - 

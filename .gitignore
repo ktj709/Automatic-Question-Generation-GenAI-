@@ -1,0 +1,6 @@
+__pycache__/
+*.pkl
+.env
+poppler-24.08.0/
+test_*.py
+*.png

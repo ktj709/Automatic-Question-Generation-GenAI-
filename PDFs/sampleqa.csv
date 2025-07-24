@@ -1,0 +1,3 @@
+question,answer,reference,source_chunks
+"What is IoT architecture?","IoT architecture has three layers: perception, network, and application.","IoT architecture consists of three layers: perception, network, and application.","['The architecture of IoT is divided into three layers: perception, network, and application.']"
+"What does the perception layer do?","The perception layer gathers physical data using sensors.","The perception layer is responsible for detecting and gathering physical data.","['The perception layer is responsible for detecting and gathering physical data using sensors.']"
