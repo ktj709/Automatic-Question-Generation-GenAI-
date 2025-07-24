@@ -1,75 +1,44 @@
-# Core dependencies
-streamlit==1.46.1
+# Core Streamlit and basic dependencies
+streamlit==1.39.0
+pandas==2.2.2
+numpy==1.26.4
+pillow==10.4.0
+
+# PDF processing (essential)
 pdfplumber==0.11.7
-transformers==4.52.4
-torch==2.7.1
-torchvision==0.22.1
-pillow==11.2.1
-pandas==2.3.0
-numpy==2.2.6
-
-# PDF processing
-pdfminer.six==20250506
-pikepdf==9.9.0
 pdf2image==1.17.0
-pypdf==5.7.0
+pypdf==4.3.1
 
-# Machine learning
-huggingface-hub==0.33.0
-tokenizers==0.21.1
-safetensors==0.5.3
-accelerate==1.8.1
-faiss-cpu==1.8.0.post1
-
-# Document processing
-python-docx==1.2.0
-python-pptx==1.0.2
-openpyxl==3.1.5
-
-# LLM integrations
-anthropic==0.57.1
-openai==1.93.1
+# Google AI and LangChain (core functionality)
+google-generativeai==0.8.3
 langchain==0.3.26
 langchain-core==0.3.66
 langchain-community==0.3.26
-langchain-openai==0.3.27
 langchain-google-genai==2.0.9
 
-# Utilities
-requests==2.32.4
-python-dotenv==1.1.0
-tqdm==4.67.1
-packaging==24.2
-typing_extensions==4.14.0
-pydantic==2.11.7
+# Machine Learning (reduced versions for compatibility)
+transformers==4.44.2
+torch==2.4.1
+sentence-transformers==3.0.1
 
-# Image processing
-opencv-python-headless==4.12.0.88
-beautifulsoup4==4.13.4
+# Vector store (try simpler version)
+faiss-cpu==1.7.4
 
-# Data processing
-scipy==1.15.3
-scikit-learn==1.7.0
-matplotlib==3.10.3
-
-# Web and API
-httpx==0.28.1
-aiohttp==3.12.13
-certifi==2025.6.15
-urllib3==2.5.0
-
-# Missing dependencies for your modules  
-sentence-transformers==3.3.1
+# Text processing and evaluation
 rouge-score==0.1.2
-bert-score==0.3.13
+nltk==3.8.1
+
+# Memory monitoring (simplified)
+psutil==6.0.0
 pympler==0.9
-google-generativeai==0.8.3
-nltk==3.9.1
-textstat==0.7.4
 
-# System dependencies for pdf2image
-# Note: poppler-utils is a system package, install via apt-get on Linux
+# Utilities
+python-dotenv==1.0.1
+requests==2.32.3
+tqdm==4.66.5
+beautifulsoup4==4.12.3
 
-# Development
-pytest==8.4.1
-rich==13.9.4
+# Optional dependencies (comment out if causing issues)
+# bert-score==0.3.13
+# textstat==0.7.4
+# opencv-python-headless==4.10.0.84
