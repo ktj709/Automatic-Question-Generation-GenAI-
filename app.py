@@ -21,7 +21,6 @@ from functools import wraps
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import logging
 import pandas as pd
-from memory_profiler import profile as memory_profile
 from pympler import muppy, summary, tracker
 from dotenv import load_dotenv
 import pdfplumber
