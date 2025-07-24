@@ -9,3 +9,6 @@ langchain_google_genai
 pdfplumber
 pdf2image
 psutil
+langchain
+langchain-community
+faiss-cpu
