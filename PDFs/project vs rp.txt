@@ -1,0 +1,220 @@
+| Feature Category                               | Our Project                                                     | RP1                                                         |
+| ---------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------- |
+| **RAG Pipeline (Index → Retrieve → Generate)** | ✅ Fully implemented with FAISS retrieval + Gemini LLM generation | ✅ Uses retrieval-augmented generation with FAISS and LLM    |
+| **PDF Support + Text Extraction**              | ✅ Multi-PDF upload, pdfplumber for text extraction               | ✅ Supports PDF preprocessing but only basic text extraction |
+| **FAISS-based Vector Store**                   | ✅ Implemented with metadata tagging                              | ✅ Uses FAISS for document indexing                          |
+| **LLM for Answer Generation**                  | ✅ Google Gemini 1.5 Flash                                        | ⚠️ GPT-3.5 used, no Gemini integration                      |
+| **Reranker System**                            | ✅ Cross-encoder reranking with MS MARCO models                   | ❌ Not included                                              |
+| **Table Extraction**                           | ✅ Extracts tables with pdfplumber                                | ❌ Not included                                              |
+| **Table Summarization with LLM**               | ✅ BLIP + LLM summarization                                       | ❌ Not included                                              |
+| **Image Extraction from PDFs**                 | ✅ Extracts figures/images from PDFs                              | ❌ Not included                                              |
+| **Image Captioning**                           | ✅ BLIP image captioning                                          | ❌ Not included                                              |
+| **MCQ Generation from Context**                | ✅ LLM-based MCQ generation                                       | ✅ Question generation but not MCQ-specific                  |
+| **Memory Profiling Dashboard**                 | ✅ Live memory monitoring, leak detection, profiling              | ❌ Not included                                              |
+| **Evaluation Metrics**                         | ✅ ROUGE & BERTScore                                              | ⚠️ BLEU & METEOR instead                                    |
+| **Offline / Local Evaluation Tool**            | ✅ Local QA evaluation module                                     | ❌ Not included                                              |
+| **Performance Monitoring**                     | ✅ Function execution timing, profiling                           | ❌ Not included                                              |
+| **Chunking Strategy**                          | ✅ RecursiveCharacterTextSplitter for semantic chunks             | ❌ Not described                                             |
+| **Metadata in Vector Store**                   | ✅ Stores file hash & chunk IDs                                   | ❌ Not included                                              |
+| **Question-Answering Chain**                   | ✅ LangChain QA Chain with custom prompt template                 | ✅ Basic QA chain                                            |
+| **Multi-document Handling**                    | ✅ Processes multiple PDFs at once                                | ❌ Only single document supported                            |
+| **Custom Prompt Templates**                    | ✅ Structured prompts for LLM                                     | ❌ Not mentioned                                             |
+| **User Interface**                             | ✅ Full interactive Streamlit app                                 | ❌ No UI described                                           |
+| **Image-based Context Retrieval**              | ✅ Captioned images can feed into QA                              | ❌ Not included                                              |
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+| Feature Category                               | Our Project                                                     | RP2                                                                |
+| ---------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------ |
+| **RAG Pipeline (Index → Retrieve → Generate)** | ✅ Fully implemented with FAISS retrieval + Gemini LLM generation | ✅ Retrieval-augmented generation with FAISS + transformer-based QA |
+| **PDF Support + Text Extraction**              | ✅ Multi-PDF upload, pdfplumber for text extraction               | ✅ PDF document parsing supported but only plain text extraction    |
+| **FAISS-based Vector Store**                   | ✅ Implemented with metadata tagging                              | ✅ Uses FAISS for retrieval                                         |
+| **LLM for Answer Generation**                  | ✅ Google Gemini 1.5 Flash                                        | ⚠️ Uses BERT-based extractive QA, no generative LLM                |
+| **Reranker System**                            | ✅ Cross-encoder reranking with MS MARCO models                   | ❌ Not included                                                     |
+| **Table Extraction**                           | ✅ Extracts tables with pdfplumber                                | ❌ Not included                                                     |
+| **Table Summarization with LLM**               | ✅ BLIP + LLM summarization                                       | ❌ Not included                                                     |
+| **Image Extraction from PDFs**                 | ✅ Extracts figures/images from PDFs                              | ❌ Not included                                                     |
+| **Image Captioning**                           | ✅ BLIP image captioning                                          | ❌ Not included                                                     |
+| **MCQ Generation from Context**                | ✅ LLM-based MCQ generation                                       | ❌ Not included                                                     |
+| **Memory Profiling Dashboard**                 | ✅ Live memory monitoring, leak detection, profiling              | ❌ Not included                                                     |
+| **Evaluation Metrics**                         | ✅ ROUGE & BERTScore                                              | ⚠️ Precision, Recall, and F1 only                                  |
+| **Offline / Local Evaluation Tool**            | ✅ Local QA evaluation module                                     | ❌ Not included                                                     |
+| **Performance Monitoring**                     | ✅ Function execution timing, profiling                           | ❌ Not included                                                     |
+| **Chunking Strategy**                          | ✅ RecursiveCharacterTextSplitter for semantic chunks             | ⚠️ Fixed-size chunking only                                        |
+| **Metadata in Vector Store**                   | ✅ Stores file hash & chunk IDs                                   | ❌ Not included                                                     |
+| **Question-Answering Chain**                   | ✅ LangChain QA Chain with custom prompt template                 | ⚠️ Simple retrieval + answer selection                             |
+| **Multi-document Handling**                    | ✅ Processes multiple PDFs at once                                | ❌ Only single document supported                                   |
+| **Custom Prompt Templates**                    | ✅ Structured prompts for LLM                                     | ❌ Not mentioned                                                    |
+| **User Interface**                             | ✅ Full interactive Streamlit app                                 | ❌ Not described                                                    |
+| **Image-based Context Retrieval**              | ✅ Captioned images can feed into QA                              | ❌ Not included            
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------                                         
+
+
+
+
+
+
+
+
+
+
+| Feature Category                               | Our Project                                                     | RP3                                                             |
+| ---------------------------------------------- | ---------------------------------------------------------------- | --------------------------------------------------------------- |
+| **RAG Pipeline (Index → Retrieve → Generate)** | ✅ Fully implemented with FAISS retrieval + Gemini LLM generation | ✅ Retrieval-augmented generation using FAISS and generative LLM |
+| **PDF Support + Text Extraction**              | ✅ Multi-PDF upload, pdfplumber for text extraction               | ✅ PDF text extraction supported                                 |
+| **FAISS-based Vector Store**                   | ✅ Implemented with metadata tagging                              | ✅ Uses FAISS for document indexing                              |
+| **LLM for Answer Generation**                  | ✅ Google Gemini 1.5 Flash                                        | ⚠️ Uses GPT-2/3 style models, no Gemini integration             |
+| **Reranker System**                            | ✅ Cross-encoder reranking with MS MARCO models                   | ❌ Not included                                                  |
+| **Table Extraction**                           | ✅ Extracts tables with pdfplumber                                | ⚠️ Basic table detection but no structured markdown output      |
+| **Table Summarization with LLM**               | ✅ BLIP + LLM summarization                                       | ❌ Not included                                                  |
+| **Image Extraction from PDFs**                 | ✅ Extracts figures/images from PDFs                              | ❌ Not included                                                  |
+| **Image Captioning**                           | ✅ BLIP image captioning                                          | ❌ Not included                                                  |
+| **MCQ Generation from Context**                | ✅ LLM-based MCQ generation                                       | ❌ Not included                                                  |
+| **Memory Profiling Dashboard**                 | ✅ Live memory monitoring, leak detection, profiling              | ❌ Not included                                                  |
+| **Evaluation Metrics**                         | ✅ ROUGE & BERTScore                                              | ⚠️ Uses only ROUGE                                              |
+| **Offline / Local Evaluation Tool**            | ✅ Local QA evaluation module                                     | ❌ Not included                                                  |
+| **Performance Monitoring**                     | ✅ Function execution timing, profiling                           | ❌ Not included                                                  |
+| **Chunking Strategy**                          | ✅ RecursiveCharacterTextSplitter for semantic chunks             | ⚠️ Fixed chunk size                                             |
+| **Metadata in Vector Store**                   | ✅ Stores file hash & chunk IDs                                   | ❌ Not included                                                  |
+| **Question-Answering Chain**                   | ✅ LangChain QA Chain with custom prompt template                 | ⚠️ Basic QA pipeline                                            |
+| **Multi-document Handling**                    | ✅ Processes multiple PDFs at once                                | ❌ Single PDF at a time                                          |
+| **Custom Prompt Templates**                    | ✅ Structured prompts for LLM                                     | ❌ Not mentioned                                                 |
+| **User Interface**                             | ✅ Full interactive Streamlit app                                 | ⚠️ Basic web interface                                          |
+| **Image-based Context Retrieval**              | ✅ Captioned images can feed into QA                              | ❌ Not included                                                  |
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+| Feature Category                               | Our Project                                                     | RP4                                                  |
+| ---------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------- |
+| **RAG Pipeline (Index → Retrieve → Generate)** | ✅ Fully implemented with FAISS retrieval + Gemini LLM generation | ✅ Retrieval pipeline with FAISS + generative LLM     |
+| **PDF Support + Text Extraction**              | ✅ Multi-PDF upload, pdfplumber for text extraction               | ✅ PDF ingestion and text parsing supported           |
+| **FAISS-based Vector Store**                   | ✅ Implemented with metadata tagging                              | ✅ FAISS vector store                                 |
+| **LLM for Answer Generation**                  | ✅ Google Gemini 1.5 Flash                                        | ⚠️ GPT-J / GPT-NeoX models                           |
+| **Reranker System**                            | ✅ Cross-encoder reranking with MS MARCO models                   | ❌ Not included                                       |
+| **Table Extraction**                           | ✅ Extracts tables with pdfplumber                                | ⚠️ Table detection but no robust markdown formatting |
+| **Table Summarization with LLM**               | ✅ BLIP + LLM summarization                                       | ❌ Not included                                       |
+| **Image Extraction from PDFs**                 | ✅ Extracts figures/images from PDFs                              | ❌ Not included                                       |
+| **Image Captioning**                           | ✅ BLIP image captioning                                          | ❌ Not included                                       |
+| **MCQ Generation from Context**                | ✅ LLM-based MCQ generation                                       | ❌ Not included                                       |
+| **Memory Profiling Dashboard**                 | ✅ Live memory monitoring, leak detection, profiling              | ❌ Not included                                       |
+| **Evaluation Metrics**                         | ✅ ROUGE & BERTScore                                              | ⚠️ ROUGE only                                        |
+| **Offline / Local Evaluation Tool**            | ✅ Local QA evaluation module                                     | ❌ Not included                                       |
+| **Performance Monitoring**                     | ✅ Function execution timing, profiling                           | ❌ Not included                                       |
+| **Chunking Strategy**                          | ✅ RecursiveCharacterTextSplitter for semantic chunks             | ⚠️ Fixed chunk length                                |
+| **Metadata in Vector Store**                   | ✅ Stores file hash & chunk IDs                                   | ❌ Not included                                       |
+| **Question-Answering Chain**                   | ✅ LangChain QA Chain with custom prompt template                 | ⚠️ Basic chain without custom prompts                |
+| **Multi-document Handling**                    | ✅ Processes multiple PDFs at once                                | ❌ Single document mode                               |
+| **Custom Prompt Templates**                    | ✅ Structured prompts for LLM                                     | ❌ Not mentioned                                      |
+| **User Interface**                             | ✅ Full interactive Streamlit app                                 | ⚠️ Minimal web UI                                    |
+| **Image-based Context Retrieval**              | ✅ Captioned images can feed into QA                              | ❌ Not included                                       |
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+| Feature Category                               | Our Project                                                     | RP5                                           |
+| ---------------------------------------------- | ---------------------------------------------------------------- | --------------------------------------------- |
+| **RAG Pipeline (Index → Retrieve → Generate)** | ✅ Fully implemented with FAISS retrieval + Gemini LLM generation | ✅ RAG pipeline with FAISS retrieval + LLM     |
+| **PDF Support + Text Extraction**              | ✅ Multi-PDF upload, pdfplumber for text extraction               | ✅ PDF ingestion supported                     |
+| **FAISS-based Vector Store**                   | ✅ Implemented with metadata tagging                              | ✅ FAISS                                       |
+| **LLM for Answer Generation**                  | ✅ Google Gemini 1.5 Flash                                        | ⚠️ GPT-3 model                                |
+| **Reranker System**                            | ✅ Cross-encoder reranking with MS MARCO models                   | ❌ Not included                                |
+| **Table Extraction**                           | ✅ Extracts tables with pdfplumber                                | ⚠️ Extracts tables but no advanced formatting |
+| **Table Summarization with LLM**               | ✅ BLIP + LLM summarization                                       | ❌ Not included                                |
+| **Image Extraction from PDFs**                 | ✅ Extracts figures/images from PDFs                              | ❌ Not included                                |
+| **Image Captioning**                           | ✅ BLIP image captioning                                          | ❌ Not included                                |
+| **MCQ Generation from Context**                | ✅ LLM-based MCQ generation                                       | ❌ Not included                                |
+| **Memory Profiling Dashboard**                 | ✅ Live memory monitoring, leak detection, profiling              | ❌ Not included                                |
+| **Evaluation Metrics**                         | ✅ ROUGE & BERTScore                                              | ⚠️ ROUGE only                                 |
+| **Offline / Local Evaluation Tool**            | ✅ Local QA evaluation module                                     | ❌ Not included                                |
+| **Performance Monitoring**                     | ✅ Function execution timing, profiling                           | ❌ Not included                                |
+| **Chunking Strategy**                          | ✅ RecursiveCharacterTextSplitter for semantic chunks             | ⚠️ Fixed-size chunks                          |
+| **Metadata in Vector Store**                   | ✅ Stores file hash & chunk IDs                                   | ❌ Not included                                |
+| **Question-Answering Chain**                   | ✅ LangChain QA Chain with custom prompt template                 | ⚠️ Generic QA chain                           |
+| **Multi-document Handling**                    | ✅ Processes multiple PDFs at once                                | ❌ Single PDF at a time                        |
+| **Custom Prompt Templates**                    | ✅ Structured prompts for LLM                                     | ❌ Not mentioned                               |
+| **User Interface**                             | ✅ Full interactive Streamlit app                                 | ⚠️ Minimal interface                          |
+| **Image-based Context Retrieval**              | ✅ Captioned images can feed into QA                              | ❌ Not included                                |
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+| Feature Category                               | Our Project                                                     | RP6                                       |
+| ---------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------- |
+| **RAG Pipeline (Index → Retrieve → Generate)** | ✅ Fully implemented with FAISS retrieval + Gemini LLM generation | ✅ RAG pipeline with FAISS retrieval + LLM |
+| **PDF Support + Text Extraction**              | ✅ Multi-PDF upload, pdfplumber for text extraction               | ✅ PDF ingestion supported                 |
+| **FAISS-based Vector Store**                   | ✅ Implemented with metadata tagging                              | ✅ FAISS                                   |
+| **LLM for Answer Generation**                  | ✅ Google Gemini 1.5 Flash                                        | ⚠️ OpenAI GPT-4                           |
+| **Reranker System**                            | ✅ Cross-encoder reranking with MS MARCO models                   | ❌ Not included                            |
+| **Table Extraction**                           | ✅ Extracts tables with pdfplumber                                | ✅ Table extraction supported              |
+| **Table Summarization with LLM**               | ✅ BLIP + LLM summarization                                       | ❌ Not included                            |
+| **Image Extraction from PDFs**                 | ✅ Extracts figures/images from PDFs                              | ❌ Not included                            |
+| **Image Captioning**                           | ✅ BLIP image captioning                                          | ❌ Not included                            |
+| **MCQ Generation from Context**                | ✅ LLM-based MCQ generation                                       | ❌ Not included                            |
+| **Memory Profiling Dashboard**                 | ✅ Live memory monitoring, leak detection, profiling              | ❌ Not included                            |
+| **Evaluation Metrics**                         | ✅ ROUGE & BERTScore                                              | ⚠️ ROUGE only                             |
+| **Offline / Local Evaluation Tool**            | ✅ Local QA evaluation module                                     | ❌ Not included                            |
+| **Performance Monitoring**                     | ✅ Function execution timing, profiling                           | ❌ Not included                            |
+| **Chunking Strategy**                          | ✅ RecursiveCharacterTextSplitter for semantic chunks             | ⚠️ Simple fixed chunks                    |
+| **Metadata in Vector Store**                   | ✅ Stores file hash & chunk IDs                                   | ❌ Not included                            |
+| **Question-Answering Chain**                   | ✅ LangChain QA Chain with custom prompt template                 | ⚠️ Basic chain without customization      |
+| **Multi-document Handling**                    | ✅ Processes multiple PDFs at once                                | ❌ Single document mode                    |
+| **Custom Prompt Templates**                    | ✅ Structured prompts for LLM                                     | ❌ Not mentioned                           |
+| **User Interface**                             | ✅ Full interactive Streamlit app                                 | ⚠️ Simple web UI                          |
+| **Image-based Context Retrieval**              | ✅ Captioned images can feed into QA                              | ❌ Not included                            |
+
+
+
+
+
+
+
+
+
+
+

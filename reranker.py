@@ -1,4 +1,4 @@
-# pdfqa_reranker_app.py
+
 
 import streamlit as st
 from langchain_community.vectorstores import FAISS
@@ -22,11 +22,16 @@ rerank_model_name = st.selectbox("Select Reranker Model", [
 ])
 k = st.slider("Top-k reranked chunks to return", 1, 10, 4)
 
-# --- Load embeddings model ---
+# --- Load embeddings model (LOCAL - NO API NEEDED) ---
 @st.cache_resource
 def get_embeddings_model():
-    from langchain_google_genai import GoogleGenerativeAIEmbeddings
-    return GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+    """Use local HuggingFace embeddings - no API quota limits"""
+    from langchain_community.embeddings import HuggingFaceEmbeddings
+    return HuggingFaceEmbeddings(
+        model_name="all-MiniLM-L6-v2",
+        model_kwargs={'device': 'cpu'},
+        encode_kwargs={'normalize_embeddings': True}
+    )
 
 # --- Reranked Retriever ---
 @st.cache_resource

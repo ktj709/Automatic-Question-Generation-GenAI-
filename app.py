@@ -26,8 +26,11 @@ from pympler import muppy, summary, tracker
 from dotenv import load_dotenv
 import pdfplumber
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain.embeddings import SentenceTransformerEmbeddings
 import google.generativeai as genai
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_community.vectorstores import FAISS
 from langchain.chains.question_answering import load_qa_chain
 from langchain.prompts import PromptTemplate
@@ -181,13 +184,19 @@ def memory_profile_function(func):
         return result
     return wrapper
 
+# Replace the get_embeddings_model function
 @st.cache_resource
 def get_embeddings_model():
-    return GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+       return HuggingFaceEmbeddings(
+           model_name="all-MiniLM-L6-v2",
+           model_kwargs={'device': 'cpu'},
+           encode_kwargs={'normalize_embeddings': True}
+       )
+
 
 @st.cache_resource
 def get_llm_model():
-    return ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.1)
+    return ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.1)
 
 @memory_profile_function
 def extract_text_parallel_with_memory_analysis(pdfs):
