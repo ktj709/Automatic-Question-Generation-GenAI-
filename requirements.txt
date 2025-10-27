@@ -1,0 +1,40 @@
+# --- Core Dependencies ---
+streamlit
+pandas
+numpy
+nltk
+scikit-learn
+sentence-transformers
+textstat
+torch
+transformers
+
+# --- Evaluation Metrics ---
+rouge-score
+bert-score
+comet-ml
+
+# --- PDF / File Handling ---
+PyMuPDF==1.23.7      # for fitz (PDF reading)
+pdfminer.six
+pillow
+
+# --- Table & Data Extraction ---
+camelot-py[cv]       # for table_extractor.py
+opencv-python-headless
+ghostscript
+
+# --- Text Processing ---
+beautifulsoup4
+regex
+
+# --- Visualization & Debugging ---
+matplotlib
+seaborn
+
+# --- Reranking / Embedding Utilities ---
+faiss-cpu
+tqdm
+
+# --- Safety ---
+python-dotenv
