@@ -4,3 +4,4 @@ __pycache__/
 poppler-24.08.0/
 test_*.py
 *.png
+*.pdf
