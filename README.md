@@ -1,7 +1,7 @@
-## 🧠 Document Intelligence System
-## Multi-Modal PDF Question Answering with Reranking, MCQ Generation & Local Evaluation Suite
+🧠 Document Intelligence System
+Multi-Modal PDF Question Answering with Reranking, MCQ Generation & Local Evaluation Suite
 
-## 🚀 Overview
+🚀 Overview
 
 This project is an end-to-end Document Intelligence System built using Streamlit, integrating retrieval-augmented generation (RAG), cross-encoder reranking, multimodal extraction, and comprehensive evaluation — all locally executable.
 
@@ -14,9 +14,9 @@ It enables users to:
 📊 Evaluate locally with ROUGE, BERTScore, and semantic metrics
 🧠 Monitor memory footprint and runtime statistics
 
-## 🧩 Features
+🧩 Features
 
-## 📝 1. PDF Processing & Chunking
+📝 1. PDF Processing & Chunking
 
 Handles text, tables, and embedded images
 
@@ -24,7 +24,7 @@ Extracts structured information efficiently
 
 Uses intelligent chunking for scalable retrieval
 
-## 🔍 2. Smart Retrieval with Reranker
+🔍 2. Smart Retrieval with Reranker
 
 Employs cross-encoder re-ranking for better relevance
 
@@ -32,13 +32,13 @@ Integrates with FAISS-based vector retrieval
 
 smart_retrieve() ensures precision-driven document chunks
 
-## 💬 3. Question Answering
+💬 3. Question Answering
 
 Uses LLM-backed answer generation
 
 Ensures factual grounding using top reranked context chunks
 
-## 🎯 4. MCQ Generation
+🎯 4. MCQ Generation
 
 Auto-generates MCQs from processed content
 
@@ -46,7 +46,7 @@ Configurable number of questions (e.g., 5, 10, 15)
 
 Suitable for educational and comprehension tasks
 
-## 🧮 5. Evaluation Suite
+🧮 5. Evaluation Suite
 
 Compare system answers with reference answers
 
@@ -62,7 +62,7 @@ Context Precision / Recall / Faithfulness / Correctness
 
 Integrated through eval.py and ragadeep.py
 
-## 🧠 6. Memory & Performance Profiling
+🧠 6. Memory & Performance Profiling
 
 Tracks:
 
@@ -70,7 +70,7 @@ Memory usage via psutil, pympler, tracemalloc
 Processing time per document
 Provides runtime statistics for optimization
 
-## 🧰 Tech Stack
+🧰 Tech Stack
 
 | Layer              | Tools / Libraries                                            |
 | ------------------ | ------------------------------------------------------------ |
@@ -83,7 +83,7 @@ Provides runtime statistics for optimization
 | **PDF Handling**   | PyMuPDF (`fitz`), pdfplumber, ReportLab                      |
 | **Performance**    | psutil, pympler, tracemalloc                                 |
 
-## 📁 File Structure
+📁 File Structure
 
 📂 Document-Intelligence-System/
 │
@@ -99,16 +99,16 @@ Provides runtime statistics for optimization
 
 └── README.md            # Documentation
 
-## ⚙️ Installation
+⚙️ Installation
 
-# Clone the repository
+Clone the repository
 git clone https://github.com/ktj709/Automatic-Question-Generation-GenAI-.git
 cd Automatic-Question-Generation-GenAI-
 
-# Install dependencies
+Install dependencies
 pip install -r requirements.txt
 
-## ▶️ Running the Project
+▶️ Running the Project
 🧠 Main Streamlit App
 
 streamlit run main.py
