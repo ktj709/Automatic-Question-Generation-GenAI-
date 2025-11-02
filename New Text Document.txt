@@ -4,7 +4,7 @@
 | **Vector Store Indexing** | ✅ FAISS-based vector database with embeddings                    | ❌ Not mentioned or used                                         |
 | **MCQ Generation**        | ✅ From retrieved context chunks                                  | ✅ Core focus                                                    |
 | **Reranking / Retrieval** | ✅ Yes, with `reranked_retrieve()`                                | ❌ Not included                                                  |
-| **LLM Use**               | ✅ Gemini-1.5 Flash via LangChain, BLIP for image captioning      | ✅ ChatGPT (GPT-4o), Gemini, DeepSeek                            |
+| **LLM Use**               | ✅ Gemini-2.0 Flash via LangChain, BLIP for image captioning      | ✅ ChatGPT (GPT-4o), Gemini, DeepSeek                            |
 | **Evaluation Metrics**    | ✅ ROUGE, BERTScore included                                      | ✅ Human evaluation (Likert scale), no automated metrics         |
 | **Image Captioning**      | ✅ Yes (via BLIP model)                                           | ❌ Not supported                                                 |
 | **Table Extraction**      | ✅ Yes (via `table_extractor`)                                    | ❌ Not supported                                                 |
